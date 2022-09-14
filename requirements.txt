@@ -1,0 +1,3 @@
+git+https://github.com/Ricky294/nputils.git
+numpy
+pandas
