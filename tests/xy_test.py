@@ -1,8 +1,10 @@
 import numpy
 
+from projectfolder.main import print_hi
+
 
 def test_is_take_profit_hit():
-    print('This is a test, hehe')
+    assert 6 == print_hi()
 
 
 def test_2():

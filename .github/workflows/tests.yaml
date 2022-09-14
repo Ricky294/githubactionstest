@@ -1,9 +1,9 @@
-name: Run tests
+name: Running tests with PyTest.
 
 on: [push]
 
 jobs:
-  build:
+  testing:
 
     runs-on: ubuntu-latest
 
@@ -20,7 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install git+https://github.com/Ricky294/nputils.git numpy
 
-      - name: Test with pytest
+      - name: Tests with pytest
         run: |
           pip install pytest pytest-cov
-          pytest --no-header --no-summary -q
+          pytest --cov=projectfolder tests/
